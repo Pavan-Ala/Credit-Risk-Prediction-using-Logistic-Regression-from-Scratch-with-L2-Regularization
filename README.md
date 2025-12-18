@@ -61,11 +61,9 @@ $\sigma(z) = \frac{1}{1 + e^{-z}}$
 \]
 
 #### Prediction
-\[
 $$
 \hat{y} = \frac{1}{1 + e^{-z}}
 $$
-\]
 
 ---
 
