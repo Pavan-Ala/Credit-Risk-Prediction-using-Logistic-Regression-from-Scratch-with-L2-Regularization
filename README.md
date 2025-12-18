@@ -57,12 +57,12 @@ z = Xw + b
 
 #### Sigmoid Activation
 \[
-\sigma(z) = \frac{1}{1 + e^{-z}}
+$\sigma(z) = \frac{1}{1 + e^{-z}}$
 \]
 
 #### Prediction
 \[
-\hat{y} = \sigma(Xw + b)
+\hat{y} = \frac{1}{1 + e^{-z}}
 \]
 
 ---
