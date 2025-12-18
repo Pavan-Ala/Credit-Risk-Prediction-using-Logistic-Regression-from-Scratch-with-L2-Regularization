@@ -62,7 +62,9 @@ $\sigma(z) = \frac{1}{1 + e^{-z}}$
 
 #### Prediction
 \[
+$$
 \hat{y} = \frac{1}{1 + e^{-z}}
+$$
 \]
 
 ---
@@ -72,22 +74,22 @@ $\sigma(z) = \frac{1}{1 + e^{-z}}$
 To reduce overfitting and stabilize learned coefficients, **L2 (Ridge) regularization** is added.
 
 #### Binary Cross-Entropy Loss
-\[
+$$
 L_{BCE} = -\frac{1}{n} \sum \left[y \log(\hat{y}) + (1-y)\log(1-\hat{y})\right]
-\]
+$$
 
 #### L2 Regularization Term
-\[
+$$
 L_{L2} = \frac{\lambda}{2n} \sum w^2
-\]
+$$
 
 #### Final Objective Function
-\[
+$$
 L = L_{BCE} + L_{L2}
-\]
+$$
 
 where:
-- \( \lambda \) controls regularization strength
+- $\lambda$ controls regularization strength
 - Penalizes large weights
 - Encourages smoother, more generalizable solutions
 
@@ -96,15 +98,15 @@ where:
 ### 4. Gradient Descent Optimization
 
 #### Gradient Updates
-\[
+$$
 \frac{\partial L}{\partial w} =
 \frac{1}{n} X^T(\hat{y} - y) + \frac{\lambda}{n} w
-\]
+$$
 
-\[
+$$
 \frac{\partial L}{\partial b} =
 \frac{1}{n} \sum (\hat{y} - y)
-\]
+$$
 
 Weights are iteratively updated using gradient descent until convergence.
 
