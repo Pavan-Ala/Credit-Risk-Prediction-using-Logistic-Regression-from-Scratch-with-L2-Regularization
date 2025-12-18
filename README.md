@@ -150,11 +150,3 @@ The model is evaluated using **business-relevant metrics**:
 
 **All learning logic implemented from scratch (no sklearn models)**
 
----
-
-## 🚀 How to Run
-```bash
-git clone https://github.com/your-username/credit-risk-from-scratch.git
-cd credit-risk-from-scratch
-pip install -r requirements.txt
-jupyter notebook
